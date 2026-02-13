@@ -1,437 +1,478 @@
 <!DOCTYPE html>
-<!--
-Plain-Academic by Vasilios Mavroudis
-Released under the  Simplified BSD License/FreeBSD (2-clause) License.
-https://github.com/mavroudisv/plain-academic
--->
-
 <html lang="en">
 
 <head>
   <title>Seungwon Do</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-  <link href='https://fonts.googleapis.com/css?family=Oswald:700' rel='stylesheet' type='text/css'>
+
+  <!-- Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&family=Source+Sans+3:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Site Styles -->
+  <link href="css/style.css" rel="stylesheet">
+
+  <!-- Site Scripts -->
+  <script defer src="js/main.js"></script>
 </head>
 
 <body>
 
-
   <!-- Navigation -->
-  <nav class="navbar navbar-inverse">
+  <nav class="navbar navbar-expand-md navbar-dark navbar-custom sticky-top">
     <div class="container">
-      <ul class="nav navbar-nav">
-        <li><a href="/">Home</a></li>
-        <li><a href="#publications">Publications</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#cv">CV</a></li>
-      </ul>
+      <a class="navbar-brand" href="/">Seungwon Do</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+        data-bs-target="#navbarNav" aria-controls="navbarNav"
+        aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#publications">Publications</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="#cv">CV</a></li>
+        </ul>
+      </div>
     </div>
   </nav>
 
-
-
   <!-- Page Content -->
-  <div class="container">
+  <div class="container py-4">
+    <div class="row g-4">
 
-    <div class="row">
+      <!-- Sidebar -->
+      <aside class="col-12 col-lg-3 sidebar-col">
+        <div class="sidebar-card text-center text-lg-start">
+          <img class="profile-img img-fluid rounded mb-3" src="images/seungwon_do_pic.jpg" alt="Photo of Seungwon Do">
+          <h1 class="sidebar-name">Seungwon Do</h1>
+          <p class="sidebar-title">Research Engineer</p>
+          <p class="sidebar-affiliation">
+            Human Computer Interaction<br>
+            Electronics and Telecommunications Research Institute (ETRI)<br>
+            Seoul National University
+          </p>
+          <ul class="contact-links list-unstyled">
+            <li><a href="mailto:seungwon.do@etri.re.kr">Email</a></li>
+            <li><a href="https://scholar.google.co.kr/citations?user=DclsFTwAAAAJ&hl=ko&authuser=2">Google Scholar</a></li>
+            <li><a href="https://www.linkedin.com/in/seungwon-do-8b10891a1/">LinkedIn</a></li>
+            <li><a href="https://github.com/dodoseung">Github</a></li>
+          </ul>
+        </div>
+      </aside>
 
-      <!-- Contact Info on the Sidebar -->
-      <div class="col-sm-3">
-        <img class="img-responsive" src="images/seungwon_do_pic.jpg" alt="" height="320" width="240"><br>
-        <div style="font-family: 'Verdana', sans-serif; font-size: 26px;"><b>Seungwon Do</b></div><br>
-        <p><b>Research Engineer</b><br>
-        <p>Human Computer Interaction<br>
-          Electronics and Telecommunications Research Institute (ETRI)<br>
-          Seoul National University<br>
+      <!-- Main Content -->
+      <main class="col-12 col-lg-9">
 
+        <!-- News -->
+        <h2 id="about" class="section-title">News</h2>
 
-        </p>
-        <!-- Links on the Sidebar -->
-        <div class="col-md-8" style="margin-top:2%">
-          <dd><a href="mailto:seungwon.do@etri.re.kr">Email</a></dd>
-          <dd><a href="https://scholar.google.co.kr/citations?user=DclsFTwAAAAJ&hl=ko&authuser=2">Google Scholar</a></dd>
-          <dd><a href="https://www.linkedin.com/in/seungwon-do-8b10891a1/">LinkedIn</a></dd>
-          <dd><a href="https://github.com/dodoseung">Github</a></dd>
+        <div class="news-item">&#10022; <span class="news-date">Mar 2026</span> Started Ph.D. in Dept. of Computer Science and Engineering at Seoul National University</div>
+        <div class="news-item">&#10022; <span class="news-date">Oct 2023</span> 1 Project funded by Korean Defense Acquisition Program Administration has been started <a href="#AIMD"><sup>[AIMD]</sup></a></div>
+        <div class="news-item">&#10022; <span class="news-date">Dec 2022</span> 1 Project funded by Korean Defense Acquisition Program Administration has been started <a href="#MumT"><sup>[MumT]</sup></a></div>
+        <div class="news-item">&#10022; <span class="news-date">Jan 2022</span> 1 Project funded by Korean Defense Acquisition Program Administration has been started <a href="#Micro"><sup>[Micro]</sup></a></div>
+
+        <div class="collapse" id="newsMore">
+          <div class="news-item">&#10022; <span class="news-date">Nov 2021</span> 1 paper has been accepted with minor revision at CHI '22 <a href="#MPnC"><sup>[MPnC]</sup></a></div>
+          <div class="news-item">&#10022; <span class="news-date">Oct 2021</span> 1 paper has been accepted at NeurIPS '21 Datasets and Benchmarks Track <a href="#KLUE"><sup>[KLUE]</sup></a></div>  
+          <div class="news-item">&#10022; <span class="news-date">Sep 2021</span> Presented 'Point-and-Click Simulation Model' online seminar at EIRIC</div>
+          <div class="news-item">&#10022; <span class="news-date">May 2021</span> 1 paper has been opened at arXiv <a href="#KLUE"><sup>[KLUE]</sup></a></div>
+          <div class="news-item">&#10022; <span class="news-date">May 2021</span> 1 paper has received an Honorable Mention Award at CHI '21 <a href="#PnC"><sup>[PnC]</sup></a> <span class="award-badge">(Top 5%)</span></div>
+          <div class="news-item">&#10022; <span class="news-date">Mar 2021</span> 'Guitar Learning System Using Augmented Reality' patent has been registered</div>
+          <div class="news-item">&#10022; <span class="news-date">Dec 2020</span> 1 paper has been accepted at CHI '21 <a href="#PnC"><sup>[PnC]</sup></a></div>
+          <div class="news-item">&#10022; <span class="news-date">Sep 2020</span> Started to work at ETRI, @Daejeon</div>
+          <div class="news-item">&#10022; <span class="news-date">Aug 2020</span> Received a master's degree from KAIST, @Daejeon</div>
+          <div class="news-item">&#10022; <span class="news-date">Dec 2019</span> 1 paper has been accepted at CHI '20 <a href="#Virtual"><sup>[Virtual]</sup></a></div>
+          <div class="news-item">&#10022; <span class="news-date">Jul 2019</span> Participated Summer School on Computational Interaction, @NewYork</div>
+          <div class="news-item">&#10022; <span class="news-date">Aug 2018</span> Received a bachelor's degree from POSTECH, @Pohang</div>
         </div>
 
-      </div>
+        <a class="news-toggle" data-bs-toggle="collapse" href="#newsMore" role="button" aria-expanded="false" aria-controls="newsMore">see more</a>
 
+        <!-- About Me -->
+        <hr class="section-divider" style="margin-top: 1rem;">
+        <h2 class="section-title" style="margin-top: 0.5rem;">About Me</h2>
 
+        <p>
+          Seungwon Do is a Ph.D. student in the Dept. of Computer Science and Engineering at <a href="https://hcil.snu.ac.kr/">Seoul National University</a>,
+          advised by <a href="https://hcil.snu.ac.kr/people/jinwook-seo">Prof. Jinwook Seo</a>, and a research engineer at the Defense &amp; Safety Convergence Research Division,
+          <a href="https://www.etri.re.kr/eng/main/main.etri">ETRI</a>, Korea.
+          His Ph.D. research focuses on Human-Computer Interaction (HCI), particularly in computational interaction to improve user experience.
+          At ETRI, he develops AI-driven battlefield situation awareness systems for real-time decision-making and tactical analysis in defense applications,
+          with a focus on reinforcement learning, multi-agent systems, and deep learning models.
+        </p>
 
+        <p>
+          He earned his Bachelor's degree in Electrical Engineering from Pohang University of Science and Technology (POSTECH) in 2018,
+          where he built a foundation in mathematics, physics, telecommunications, and computer engineering.
+          He then earned a Master's degree at the Graduate School of Culture Technology, Korea Advanced Institute of Science and Technology (KAIST) in 2020,
+          advised by Prof. Byungjoo Lee, focusing on computational modeling of human cognition and behavior to optimize interactions in Mixed Reality (MR) environments and AI-based simulations.
+        </p>
 
-      <!-- Entries Column -->
-      <div class="col-md-8" style="height: 100vh;">
+        <p>
+          Since joining ETRI in 2020, he has been engaged in defense projects funded by the Korean Defense Acquisition Program Administration,
+          contributing to reinforcement learning-based AI models, autonomous decision-making frameworks, and AI-driven battlefield analysis.
+          His research aims to develop reliable and interpretable AI solutions that enhance situational awareness in complex battlefield environments.
+        </p>
 
-        <!-- Main Image --> <!--
-        <div style="margin-top:3%; text-align:left;">
-          <div style="font-family: 'Verdana', sans-serif; font-size: 22px;"><b>News &#10024;</b></div>
-          &#10022; <b>Dec 2022</b> 1 Project funded by Korean Defense Acquisition Program Administration has been started <a href="#MumT"><sup>[MumT]</sup></a><br>
-          &#10022; <b>Jan 2022</b> 1 Project funded by Korean Defense Acquisition Program Administration has been started <a href="#Micro"><sup>[Micro]</sup></a><br>
-          &#10022; <b>Nov 2021</b> 1 paper has been accepted with minor revision at CHI' 22 <a href="#MPnC"><sup>[MPnC]</sup></a><br>
-          &#10022; <b>Oct 2021</b> 1 paper has been accepted at NeurIPS'21 Datasets and Benchmarks Track <a href="#KLUE"><sup>[KLUE]</sup></a><br>
+        <p><strong>Research topics:</strong> AI-based situation awareness, computational user modeling, and interactions in mixed reality environments</p>
 
-          <div>
-            <a href=#none id="show"
-              onclick="if(hide.style.display=='none') {hide.style.display='';show.innerText='see less'} else {hide.style.display='none';show.innerText='see more'}">see more</a>
-            <div id="hide" style="display: none">
-              &#10022; <b>Sep 2021</b> Presented 'Point-and-Click Simulation Model' online seminar at EIRIC<br>
-              &#10022; <b>May 2021</b> 1 paper has been opened at arXiv <a href="#KLUE"><sup>[KLUE]</sup></a><br>
-              &#10022; <b>May 2021</b> 1 paper has received an Honorable Mention Award at CHI' 21 <a href="#PnC"><sup>[PnC]</sup></a> <span style="color:red">(Top 5%)</span><br>
-              &#10022; <b>Mar 2021</b> 'Guitar Learning System Using Augmented Reality' patent has been registered<br>
-              &#10022; <b>Dec 2020</b> 1 paper has been accepted at CHI' 21 <a href="#PnC"><sup>[PnC]</sup></a><br>
-              &#10022; <b>Sep 2020</b> Started to work at ETRI, @Daejeon<br>
-              &#10022; <b>Aug 2020</b> Received a master's degree from KAIST, @Daejeon<br>
-              &#10022; <b>Dec 2019</b> 1 paper has been accepted at CHI' 20 <a href="#Virtual"><sup>[Virtual]</sup></a><br>
-              &#10022; <b>Jul 2019</b> Participated Summer School on Computational Interaction, @NewYork<br />
-              &#10022; <b>Aug 2018</b> Received a bachelor's degree from Pohang University of Science and Technology (POSTECH), @Pohang<br />
+        <!-- Education -->
+        <hr class="section-divider">
+        <h2 class="section-title">Education</h2>
+
+        <div class="timeline-entry">
+          <span class="timeline-org">Seoul National University</span>
+          <span class="timeline-date"> | 2026 - present</span><br>
+          <span class="timeline-role">Ph.D. in Dept. of Computer Science and Engineering</span><br>
+          <span class="timeline-role">Advised by <a href="https://hcil.snu.ac.kr/people/jinwook-seo">Prof. Jinwook Seo</a></span>
+        </div>
+
+        <div class="timeline-entry">
+          <span class="timeline-org">Korea Advanced Institute of Science and Technology (KAIST)</span>
+          <span class="timeline-date"> | 2018 - 2020</span><br>
+          <span class="timeline-role">M.S. in Graduate School of Culture Technology</span><br>
+          <span class="timeline-role">Advised by <a href="https://esports.yonsei.ac.kr/Professor-2">Prof. Byungjoo Lee</a></span>
+        </div>
+
+        <div class="timeline-entry">
+          <span class="timeline-org">Pohang University of Science and Technology (POSTECH)</span>
+          <span class="timeline-date"> | 2013 - 2018</span><br>
+          <span class="timeline-role">B.S. in Dept. of Electrical Engineering</span>
+        </div>
+
+        <!-- Work Experience -->
+        <h2 class="section-title">Work Experience</h2>
+
+        <div class="timeline-entry">
+          <span class="timeline-org">Electronics and Telecommunications Research Institute (ETRI)</span>
+          <span class="timeline-date"> | 2020 - present</span><br>
+          <span class="timeline-role">Research Engineer at the Intelligent Convergence Research Laboratory</span>
+        </div>
+
+        <div class="timeline-entry">
+          <span class="timeline-org">Korea Advanced Institute of Science and Technology (KAIST)</span>
+          <span class="timeline-date"> | 2018</span><br>
+          <span class="timeline-role">Research Intern at the Ubiquitous Virtual Reality Lab</span>
+        </div>
+
+        <div class="timeline-entry">
+          <span class="timeline-org">LG CNS</span>
+          <span class="timeline-date"> | 2017</span><br>
+          <span class="timeline-role">Intern at the digital marketing team</span>
+        </div>
+
+        <!-- Publications -->
+        <hr class="section-divider">
+        <h2 id="publications" class="section-title">Publications</h2>
+
+        <div class="entry" id="StairWave">
+          <img class="entry-img" src="images/stairwave_transformer.png" alt="StairWave Transformer architecture" loading="lazy">
+          <div class="entry-text">
+            <span class="entry-title">StairWave Transformer: For Fast Utilization of Recognition Function in Various Unmanned Vehicles</span><br>
+            Donggyu Choi, Chang-eun Lee, Jaeuk Baek, <em>Seungwon Do</em>, Sungwoo Jun, Kwang-yong Kim, and Young-guk Ha<br>
+            <span class="entry-meta">Machines 2023, 11(12), 1068</span>
+            <div class="entry-links">
+              <a href="paper/stairwave_transformer.pdf">Paper</a>
             </div>
           </div>
-          <br> -->
-
-          <div style="font-family: 'Verdana', sans-serif; font-size: 22px;"><b>About me</b></div>
-          <p>
-            <div style="line-height:5%;"><br></div>
-            Seungwon Do is a research engineer at the Defense & Safety Convergence Research Division, <a href="https://www.etri.re.kr/eng/main/main.etri">ETRI</a>, Korea,
-            where he develops AI-driven battlefield situation awareness systems for real-time decision-making and tactical analysis in defense applications.
-            His work focuses on reinforcement learning, multi-agent systems, and deep learning models to improve autonomous decision-making and situational inference.
-            He is also interested in Human-Computer Interaction (HCI), particularly in computational interaction to improve user experience.
-            <br><div style="line-height:50%;"><br></div>
-            He earned his Bachelor’s degree in Electrical Engineering from Pohang University of Science and Technology (POSTECH) in 2018,
-            where he built a foundation in mathematics, physics, telecommunications, and computer engineering.
-            He then earned a Master’s degree at the Graduate School of Culture Technology, Korea Advanced Institute of Science and Technology (KAIST) in 2020,
-            advised by Prof. Byungjoo Lee, focusing on computational modeling of human cognition and behavior to optimize interactions in Mixed Reality (MR) environments and AI-based simulations.
-            <br><div style="line-height:50%;"><br></div>
-            Since joining ETRI in 2020, he has been engaged in defense projects funded by the Korean Defense Acquisition Program Administration,
-            contributing to reinforcement learning-based AI models, autonomous decision-making frameworks, and AI-driven battlefield analysis.
-            His research aims to develop reliable and interpretable AI solutions that enhance situational awareness in complex battlefield environments.
-            
-          </p>
-
-          <p><b><i>Research topics</b></i><br>
-          <p> AI-based situation awareness, computational user modeling, and interactions in mixed reality environments</p>
-          <!--
-          <p><b><i>Ongoing</b></i><br>
-          <p>
-            Researching a thermal perception augmentation in the MR environment<br>
-            Implementing deep learning algorithms at <a href="https://github.com/dodoseung/deep-reinforcement-learning-pytorch">github</a></p>
-          <br><br>-->
-
-
-          <HR>
-          <p id="status"></p>
-
-          <div style="font-family: 'Verdana', sans-serif; font-size: 22px;"><b>Education</b></div>
-          <p>
-          <div style="line-height:5%;"><br></div>
-
-          <b>Seoul National University</b> | 2026-current<br>
-          Ph.D. in Dept. of Computer Science and Engineering<br>
-          Advised by <a href="https://hcil.snu.ac.kr/people/jinwook-seo">Prof. Jinwook Seo</a>
-          <div style="line-height:50%;"><br></div>
-
-          <b>Korea Advanced Institute of Science and Technology (KAIST)</b> | 2018-2020<br>
-          M.S. in Graduate School of Culture Technology<br>
-          Advised by <a href="https://esports.yonsei.ac.kr/Professor-2">Prof. Byungjoo Lee</a>
-          <div style="line-height:50%;"><br></div>
-
-          <b>Pohang University of Science and Technology (POSTECH)</b> | 2013-2018<br>
-          B.S. in Dept. of Electrical Engineering<br>
-          <div style="line-height:50%;"><br></div>
-        
-          </p>
-
-          <br>
-
-          <div style="font-family: 'Verdana', sans-serif; font-size: 22px;"><b>Work Experience</b></div>
-          <p>
-          <div style="line-height:5%;"><br></div>
-          <b>Electronics and Telecommunications Research Institute (ETRI)</b> | 2020-current<br>
-          Research Engineer at the Intelligent Convergence Research Laboratory<br>
-          <div style="line-height:50%;"><br></div>
-
-          <b>Korea Advanced Institute of Science and Technology (KAIST)</b> | 2018<br>
-          Research Intern at the Ubiquitous Virtual Reality Lab<br>
-          <div style="line-height:50%;"><br></div>
-
-          <b>LG CNS</b> | 2017<br>
-          Intern at the digital marketing team<br>
-          <br>
-          </p>
-
-          <!--
-          <div style="font-family: 'Verdana', sans-serif; font-size: 22px;"><b>Research Experience</b></div>
-          <p>
-          <div style="line-height:5%;"><br></div>
-          <b>ACM International Conferences on Interactive Surfaces and Spaces (ISS’ 19)</b> | 2019<br>
-          Demo at the HCI KAIST Open Lab<br>
-          <a href="poster/ISS_poster.pdf">Poster</a><br>
-          <div style="line-height:50%;"><br></div>
-
-          <b>Columbia University and Stony Brook University</b> | 2019<br>
-          Participant in Summer School on Computational Interaction<br>
-          <a href="certification/2019_computational_interaction.jpg">Certification</a><br>
-          <br>
-          </p>
-          -->
-
-
-          <HR>
-
-          <p id="publications"></p>
-          <div style="font-family: 'Verdana', sans-serif; font-size: 22px;"><b>Publications</b></div>
-          <!--
-              <p>
-                <b><i>&#8226; <u>Conference Papers</u></b></i><br>
-              </p>
-              -->
-        <p id="StairWave"></p>
-          <div style="line-height:5%;"><br></div>
-          <!-- KLUE -->
-          <div><img src="images/stairwave_transformer.png" style="display:inline-block; padding-right:10px; width:192px; height:130px; vertical-align: top; float:left;"></div>
-          <b>StairWave Transformer: For Fast Utilization of Recognition Function in Various Unmanned Vehicles</b> <br>
-          Donggyu Choi, Chang-eun Lee, Jaeuk Baek, <i>Seungwon Do</i>, Sungwoo Jun, Kwang-yong Kim, and Young-guk Ha<br>
-          Machines 2023, 11(12), 1068<br>
-          <a href="paper/stairwave_transformer.pdf">Paper</a><br><br>
-
-          <p id="MPnC"></p>
-          <div style="line-height:5%;"><br></div>
-          <!-- Point and Click Modulation -->
-          <div><img src="video/modulation_video.gif" style="display:inline-block; padding-right:10px; width:192px; height:108px; vertical-align: top; float:left;"></div>
-          <b>Speeding up Inference with User Simulators through Policy Modulation</b> <br>
-          Heeseung Moon, <i>Seungwon Do</i>, Wonjae Kim, Minsuk Chang, Jiwon Seo, and Byungjoo Lee<br>
-          2022 CHI Conference on Human Factors in Computing Systems (CHI’ 22)<br>
-          <a href="paper/speeding_up_inference_with_user_simulators_through_policy_modulation.pdf">Paper</a> | 
-          <a href="https://www.youtube.com/watch?v=97soPqWLcT4">Talk</a> |
-          <a href="https://hsmoon121.github.io/projects/chi22-inference/">Page</a> |
-          <a href="https://github.com/hsmoon121/pnc-dataset">Data</a><br><br>
-
-          <p id="KLUE"></p>
-          <div style="line-height:5%;"><br></div>
-          <!-- KLUE -->
-          <div><img src="images/klue_task_overview.png" style="display:inline-block; padding-right:10px; width:192px; height:192px; vertical-align: top; float:left;"></div>
-          <b>KLUE: Korean Language Understanding Evaluation</b> <br>
-          Sungjoon Park, Jihyung Moon, Sungdong Kim, Won Ik Cho, Jiyoon Han, Jangwon Park, Chisung Song, Junseong Kim,
-          Yongsook Song, Taehwan Oh, Joohong Lee, Juhyun Oh, Sungwon Lyu, Younghoon Jeong, Inkwon Lee, Sangwoo Seo,
-          Dongjun Lee, Hyunwoo Kim, Myeonghwa Lee, Seongbo Jang, <i>Seungwon Do</i>, Sunkyoung Kim, Kyungtae Lim,
-          Jongwon Lee, Kyumin Park, Jamin Shin, Seonghyun Kim, Lucy Park, Alice Oh, Jungwoo Ha, and Kyunghyun Cho<br>
-          Conference on Neural Information Processing Systems 2021 Datasets and Benchmarks Track (NeurIPS' 21)<br>
-          <a href="https://arxiv.org/abs/2105.09680">Paper</a> |
-          <a href="https://klue-benchmark.com">Benchmark</a> |
-          <a href="https://github.com/KLUE-benchmark/KLUE">Code</a><br><br>
-
-          <p id="PnC"></p>
-          <div style="line-height:5%;"><br></div>
-          <!-- Point and Click -->
-          <div><img src="video/point_and_click_video.gif" style="display:inline-block; padding-right:10px; width:192px; height:108px; vertical-align: top; float:left;"></div>
-          <b>A Simulation Model of Intermittently Controlled Point-and-Click Behaviour</b> <br>
-          <i>Seungwon Do</i>, Minsuk Chang, and Byungjoo Lee<br>
-          2021 CHI Conference on Human Factors in Computing Systems (CHI’ 21)<br>
-          <a href="paper/point_and_click_simulation_model.pdf">Paper</a> |
-          <a href="https://www.youtube.com/watch?v=-qJ76VXEqV4">Talk</a> | 
-          <a href="https://github.com/dodoseung/point-and-click-simulation-model">Code</a> |
-          <span style="color:red">Honorable Mention Award (Top 5%)</span> |
-          26.3% Acceptance Rate<br><br>
-
-          <p id="Virtual"></p>
-          <div style="line-height:50%;"><br></div>
-          <!-- Virtual Collision -->
-          <div><img src="video/virtual_collision_video.gif" style="display:inline-block; padding-right:10px; width:192px; height:108px; vertical-align: top; float:left;"></div>
-          <b>Improving Reliability of Virtual Collision Responses: A Cue Integration Technique</b> <br>
-          <i>Seungwon Do</i> and Byungjoo Lee<br>
-          2020 CHI Conference on Human Factors in Computing Systems (CHI’ 20)<br>
-          <a href="paper/virtual_collision_model.pdf">Paper</a> |
-          <a href="https://www.youtube.com/watch?v=JsdThe1J5HM">Talk</a> |
-          24.3% Acceptance Rate<br><br><br>
-
-          <div style="line-height:50%;"><br></div>
-          <!-- Augmented Guitar -->
-          <div><img src="video/guitar_video.gif" style="display:inline-block; padding-right:10px; width:192px; height:108px; vertical-align: top; float:left;"></div>
-          <b>Fingering Augmentation System for Guitar Learning</b><br>
-          <i>Seungwon Do</i>, Hyungil Kim, and Woontack Woo<br>
-          Korea Computer Congress 2018<br>
-          <br> <br> <br>
-          </p>
-
-          <div style="font-family: 'Verdana', sans-serif; font-size: 22px;"><b>Honors and Awards</b></div>
-          <p>
-          <div style="line-height:5%;"><br></div>
-
-          <b>ACM CHI 2021</b> Honorable Mention Award | <a href="certification/2021_acm_chi_honorable_mention_award.pdf">2021</a><br>
-          <b>SK Creative Challenge</b> 2nd Prize | 2018<br>
-          <b>KAIST Invention Award</b> 2nd Prize | 2018<br>
-          <b>Paper Contest of Korea Computer Congress</b> 1st Prize | 2018<br>
-          <b>Graduation Exhibition in Dept. of Electrical Engineering</b> 1st Prize | 2017<br>
-
-          <div style="line-height:100%;"><br></div>
-
-          <b>KAIST Alumni Association Scholarship</b> | 2020<br>
-          <b>SAMSUNG Oh-Heon Kwon Scholarship</b> | 2015-2016<br>
-          <b>National Excellence Scholarship (Natural Science and Engineering)</b> | 2015-2016<br>
-          <b>POSTECH Jigok Scholarship</b> | 2013-2014<br>
-          <br>
-          </p>
-
-
-          <p>
-          <div style="font-family: 'Verdana', sans-serif; font-size: 22px;"><b>Patent</b></div>
-          <p><b><i>&#8226; <u>Domestic</u></b></i><br></p>
-          <b>System and Method for Hypergraph-based Multi-agent Battlefield Situation Awareness</b> <a href="patent/hypergraph.pdf">Doc</a> | 2023<br>
-          <b>Guitar Learning System Using Augmented Reality</b> <a href="patent/guitar_learning.pdf">Doc</a> | 2021<br>
-          <br>
-          </p>
-
-
-          <p>
-          <div style="font-family: 'Verdana', sans-serif; font-size: 22px;"><b>Services</b></div>
-          <p><b><i>&#8226; <u>Reviewing</u></b></i><br></p>
-          CHI | 2025 2024 2023 2022 2021<br>
-          CHI PLAY WIP | 2022 2020<br>
-
-          <br>
-
-          <p><b><i>&#8226; <u>Seminar</u></b></i><br></p>
-          EIRIC | <a href="https://www.eiric.or.kr/community/webinar_detail.php?Seq=51&totalCnt=48">2021</a><br>
-          </p>
-
-          <br>
-
-          <HR>
-
-          <p id="projects"></p>
-          <div style="font-family: 'Verdana', sans-serif; font-size: 22px;"><b>Projects</b></div>
-
-          <p><b><i>&#8226; <u>Work Projects</u></b></i><br></p>
-          <p id="AIMD"></p>
-          <div><img src="images/multi_modal.png" style="display:inline-block; padding-right:10px; width:192px; height:108px; vertical-align: top; float:left;"></div>
-          <b>Development of Explainable Spatio-temporal Complex Battlefield Situation Awareness Technology</b> | 2023-2027<br>
-            <!--설명가능한 시공간 복합전장 상황인지 기술 개발 (AI 기반 멀티모달 정보융합 및 시공간 전역 상황인지 기술)<br>-->
-            <div style="font-size: 12px;">This project, funded by the Korean Defense Acquisition Program Administration, aims to develop a battlefield situation awareness system that analyzes battlefield information collected from a virtual battlefield simulator using artificial intelligence technologies. The system enhances battlefield analysis through multiple hypothesis generation, object interaction analysis, and scene graph generation.</div>
-            <div style="line-height:50%;"><br></div>
-          <p id="MumT"></p>
-          <div><img src="images/mumt.png" style="display:inline-block; padding-right:10px; width:192px; height:108px; vertical-align: top; float:left;"></div>
-          <b>Realtime Complex Battlefield Situation Awareness Technology</b> | 2022-2026<br>
-            <!--실시간 복합 전장정보 상황인지 기술 (소형무장헬기 유·무인복합체계용 유무인 자율협업 및 결심지원체계 기술 개발)<br>-->
-            <div style="font-size: 12px;">This project, funded by the Korean Defense Acquisition Program Administration, aims to develop a battlefield situation awareness system that leverages Manned-Unmanned Teaming (MUM-T) systems to analyze battlefield information collected by UAVs using artificial intelligence technologies. The system enhances real-time situational awareness and prediction to support strategic decision-making through video image quality enhancement, object semantic segmentation, object recognition and reconstruction, scene graph generation, and knowledge analysis.</div>
-            <div style="line-height:50%;"><br></div>
-          <p id="Micro"></p>
-          <div><img src="images/swarm_micro_robots.jpg" style="display:inline-block; padding-right:10px; width:192px; height:108px; vertical-align: top; float:left;"></div>
-          <b>Situation Awareness Technology using Swarm Ultra-small Robots</b> | 2022-2027<br>
-            <!--초소형 군집로봇 상황/환경 인지 기술 (초소형 지상로봇 군집운용 통제기술)<br>-->
-            <div style="font-size: 12px;">This project, funded by the Korean Defense Acquisition Program Administration, aims to develop a battlefield situation awareness system utilizing swarm ultra-small ground robots to analyze battlefield information collected by the robots using artificial intelligence technologies. The system enhances real-time situational awareness and prediction to support strategic decision-making through cooperative object recognition, tracking and dynamic behavior inference, place recognition, and model optimization.</div>
-            <div style="line-height:50%;"><br></div>
-          <p id="AIStaff"></p>
-          <div><img src="images/ai_staff.jpg" style="display:inline-block; padding-right:10px; width:192px; height:108px; vertical-align: top; float:left;"></div>
-          <b>A Study on Realtime Multi-Layer Battle Situation Awareness in Time and Space for AI Military Staff</b> | 2021-2022<br>
-            <!--AI 군참모를 위한 시공간 다계층 전역 상황 인지 원천기술 연구<br>-->
-            <div style="font-size: 12px;">This project, funded by ETRI, aims to develop a battlefield situation awareness system that analyzes unstructured battlefield information, including video and text data collected by combat assets, using artificial intelligence technologies. The system enhances battlefield analysis through battlefield data generation, cooperative object recognition, automatic labeling, and scene graph generation.</div>
-            <div style="line-height:50%;"><br></div>
-          <p id="PolBot"></p>
-          <div><img src="images/pol_bot.png" style="display:inline-block; padding-right:10px; width:192px; height:108px; vertical-align: top; float:left;"></div>
-          <b>Pol-Bot Development for Conversational Police Knowledge Services</b> | 2020-2021<br>
-            <!--대화형 치안 지식 서비스 폴봇 개발<br>-->
-            <div style="font-size: 12px;">This project, funded by the Korean National Police Agency, aims to develop an interactive knowledge service system that analyzes voice and text data collected from police and public security services using artificial intelligence technologies. The system provides security-related information through natural language processing-based question-answering, speech recognition and conversion, and automated legal information retrieval.</div>
-
-          <br>
-        
-          <p><b><i>&#8226; <u>Personal Projects</u></b></i><br></p>
-
-          <div><img src="video/hand_interfaces_video.gif" style="display:inline-block; padding-right:10px; width:192px; height:108px; vertical-align: top; float:left;"></div>
-          <b>Hand Interfaces using Hand Detection Model</b><br>
-          Software engineer for a hand interfaces model | 2023<br>
-          #ComputerVision #SupervisedLearning<br>
-          <a href="https://dl.acm.org/doi/abs/10.1145/3491102.3501898">Reference Paper</a><br><br><br>
-
-          <div><img src="video/3d_visualization_video.gif" style="display:inline-block; padding-right:10px; width:192px; height:108px; vertical-align: top; float:left;"></div>
-          <b>3D Objects Visualization Tool</b><br>
-          Software engineer for a 3d visualization tool | 2022<br>
-          #OpenGL #GUI<br><br><br><br>
-
-          <div><img src="video/two_thumb_typing_video.gif" style="display:inline-block; padding-right:10px; width:192px; height:108px; vertical-align: top; float:left;"></div>
-          <b>Two Thumbs Typing Simulation</b><br>
-          Software engineer for a two thumbs typing simulation | 2021<br>
-          #ComputationalUserModeling #ReinforcementLearning<br><br><br><br>
-          
-          <div><img src="video/kiosk_video.gif" style="display:inline-block; padding-right:10px; width:192px; height:108px; vertical-align: top; float:left;"></div>
-          <b>Museum Collection Voting System on Kiosk</b><br>
-          Software engineer for a system displaying museum collection information<br>
-          National Museum of Modern and Contemporary Art | 2019<br>
-          #Unity<br>
-          <a href="https://youtu.be/5klaC6GWM6U">Video</a><br><br>
-
-          <div><img src="video/yellouder_video.gif" style="display:inline-block; padding-right:10px; width:192px; height:108px; vertical-align: top; float:left;"></div>
-          <b>YelLouder: Shouting Game using Human Voice Pitch and Volume</b><br>
-          Software engineer for a media art using a human voice<br>
-          PlaceMak gallery | 2019<br>
-          #Unity #MediaArt<br>
-          <a href="https://youtu.be/lSNM1Yp-5DQ">Video</a><br><br>
-
-          <div><img src="images/pathguider.png" style="display:inline-block; padding-right:10px; width:192px; height:108px; vertical-align: top; float:left;"></div>
-          <b>PathGuider: Exploration Assistance System for Virtual Reality Environment</b><br>
-          Software engineer for a path-guiding system in virtual reality<br>
-          Korea Advanced Institute of Science and Technology | 2018<br>
-          #Unity #HTCVive #VR<br><br><br>
-          
-          <div><img src="video/guitar_proto_video.gif" style="display:inline-block; padding-right:10px; width:192px; height:108px; vertical-align: top; float:left;"></div>
-          <b>Intuitive Guitar Musical Note Indicator</b><br>
-          Software engineer for a guitar musical note indicator program<br>
-          Pohang University of Science and Technology | 2017<br>
-          #OpenGL #AR<br><br><br>
-
-          <div><img src="video/drone_video.gif" style="display:inline-block; padding-right:10px; width:192px; height:108px; vertical-align: top; float:left;"></div>
-          <b>Intuitive Drone Control using Leap Motion</b><br>
-          UX designer for a drone control system using leap motion<br>
-          Seoul National University | 2016<br>
-          #Drone #LeapMotion<br><br><br>
-
-          <div><img src="images/yutmarble.png" style="display:inline-block; padding-right:10px; width:192px; height:108px; vertical-align: top; float:left;"></div>
-          <b>Yut-marble: Multiplayer Game for Korean Blue Marble</b><br>
-          Project manager and software engineer for a customized blue marble game<br>
-          Pohang University of Science and Technology | 2015<br>
-          #QT #C++ #Game<br><br><br>          
-
-          <br>
-        
-          <div style="font-family: 'Verdana', sans-serif; font-size: 22px;"><b>Skills</b></div>
-          <p>
-          <div style="line-height:5%;"><br></div>
-
-          <b>Programming</b> C, C++, C#, Java, and Python<br>
-          <b>Application Development Including VR and AR</b> Unity<br>
-          <b>Data Analysis and Visualization</b> Matlab and R<br>
-          <b>Handling Motion Capture Data</b> Optitrack<br>
-          <b>Robotics</b> ROS1 and ROS2<br>
-          </p>
-
-          <br>
-
-          <HR>
-
-          <p id="cv"></p>
-          <div style="font-family: 'Verdana', sans-serif; font-size: 22px;"><b>Curriculum Vitae</b></div>
-          <p>
-          <div style="line-height:5%;"><br></div>
-
-          <a href="cv/cv_seungwon_do.pdf">CV</a> | Mar 23, 2023<br>
-          </p>
-
-          <br>
-          <br>
-          updated on Feb 13, 2025 <br>
-
-          <br>
-          <br>
-
         </div>
-      </div>
+
+        <div class="entry" id="MPnC">
+          <img class="entry-img" src="video/modulation_video.gif" alt="Policy modulation simulation demonstration" loading="lazy">
+          <div class="entry-text">
+            <span class="entry-title">Speeding up Inference with User Simulators through Policy Modulation</span><br>
+            Heeseung Moon, <em>Seungwon Do</em>, Wonjae Kim, Minsuk Chang, Jiwon Seo, and Byungjoo Lee<br>
+            <span class="entry-meta">2022 CHI Conference on Human Factors in Computing Systems (CHI '22)</span>
+            <div class="entry-links">
+              <a href="paper/speeding_up_inference_with_user_simulators_through_policy_modulation.pdf">Paper</a> |
+              <a href="https://www.youtube.com/watch?v=97soPqWLcT4">Talk</a> |
+              <a href="https://hsmoon121.github.io/projects/chi22-inference/">Page</a> |
+              <a href="https://github.com/hsmoon121/pnc-dataset">Data</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="entry" id="KLUE">
+          <img class="entry-img" src="images/klue_task_overview.png" alt="KLUE benchmark task overview" loading="lazy">
+          <div class="entry-text">
+            <span class="entry-title">KLUE: Korean Language Understanding Evaluation</span><br>
+            Sungjoon Park, Jihyung Moon, Sungdong Kim, Won Ik Cho, Jiyoon Han, Jangwon Park, Chisung Song, Junseong Kim,
+            Yongsook Song, Taehwan Oh, Joohong Lee, Juhyun Oh, Sungwon Lyu, Younghoon Jeong, Inkwon Lee, Sangwoo Seo,
+            Dongjun Lee, Hyunwoo Kim, Myeonghwa Lee, Seongbo Jang, <em>Seungwon Do</em>, Sunkyoung Kim, Kyungtae Lim,
+            Jongwon Lee, Kyumin Park, Jamin Shin, Seonghyun Kim, Lucy Park, Alice Oh, Jungwoo Ha, and Kyunghyun Cho<br>
+            <span class="entry-meta">Conference on Neural Information Processing Systems 2021 Datasets and Benchmarks Track (NeurIPS '21)</span>
+            <div class="entry-links">
+              <a href="https://arxiv.org/abs/2105.09680">Paper</a> |
+              <a href="https://klue-benchmark.com">Benchmark</a> |
+              <a href="https://github.com/KLUE-benchmark/KLUE">Code</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="entry" id="PnC">
+          <img class="entry-img" src="video/point_and_click_video.gif" alt="Point-and-click simulation demonstration" loading="lazy">
+          <div class="entry-text">
+            <span class="entry-title">A Simulation Model of Intermittently Controlled Point-and-Click Behaviour</span><br>
+            <em>Seungwon Do</em>, Minsuk Chang, and Byungjoo Lee<br>
+            <span class="entry-meta">2021 CHI Conference on Human Factors in Computing Systems (CHI '21)</span>
+            <div class="entry-links">
+              <a href="paper/point_and_click_simulation_model.pdf">Paper</a> |
+              <a href="https://www.youtube.com/watch?v=-qJ76VXEqV4">Talk</a> |
+              <a href="https://github.com/dodoseung/point-and-click-simulation-model">Code</a> |
+              <span class="award-badge">Honorable Mention Award (Top 5%)</span> |
+              26.3% Acceptance Rate
+            </div>
+          </div>
+        </div>
+
+        <div class="entry" id="Virtual">
+          <img class="entry-img" src="video/virtual_collision_video.gif" alt="Virtual collision response demonstration" loading="lazy">
+          <div class="entry-text">
+            <span class="entry-title">Improving Reliability of Virtual Collision Responses: A Cue Integration Technique</span><br>
+            <em>Seungwon Do</em> and Byungjoo Lee<br>
+            <span class="entry-meta">2020 CHI Conference on Human Factors in Computing Systems (CHI '20)</span>
+            <div class="entry-links">
+              <a href="paper/virtual_collision_model.pdf">Paper</a> |
+              <a href="https://www.youtube.com/watch?v=JsdThe1J5HM">Talk</a> |
+              24.3% Acceptance Rate
+            </div>
+          </div>
+        </div>
+
+        <div class="entry">
+          <img class="entry-img" src="video/guitar_video.gif" alt="Guitar fingering augmentation demonstration" loading="lazy">
+          <div class="entry-text">
+            <span class="entry-title">Fingering Augmentation System for Guitar Learning</span><br>
+            <em>Seungwon Do</em>, Hyungil Kim, and Woontack Woo<br>
+            <span class="entry-meta">Korea Computer Congress 2018</span>
+          </div>
+        </div>
+
+        <!-- Honors and Awards -->
+        <h2 class="section-title">Honors and Awards</h2>
+
+        <h3 class="subsection-label">Awards</h3>
+        <ul class="honors-list">
+          <li><strong>ACM CHI 2021</strong> Honorable Mention Award | <a href="certification/2021_acm_chi_honorable_mention_award.pdf">2021</a></li>
+          <li><strong>SK Creative Challenge</strong> 2nd Prize | 2018</li>
+          <li><strong>KAIST Invention Award</strong> 2nd Prize | 2018</li>
+          <li><strong>Paper Contest of Korea Computer Congress</strong> 1st Prize | 2018</li>
+          <li><strong>Graduation Exhibition in Dept. of Electrical Engineering</strong> 1st Prize | 2017</li>
+        </ul>
+
+        <h3 class="subsection-label">Scholarships</h3>
+        <ul class="honors-list">
+          <li><strong>KAIST Alumni Association Scholarship</strong> | 2020</li>
+          <li><strong>SAMSUNG Oh-Heon Kwon Scholarship</strong> | 2015 - 2016</li>
+          <li><strong>National Excellence Scholarship (Natural Science and Engineering)</strong> | 2015 - 2016</li>
+          <li><strong>POSTECH Jigok Scholarship</strong> | 2013 - 2014</li>
+        </ul>
+
+        <!-- Patents -->
+        <h2 class="section-title">Patents</h2>
+        <h3 class="subsection-label">Domestic</h3>
+        <ul class="honors-list">
+          <li><strong>System and Method for Hypergraph-based Multi-agent Battlefield Situation Awareness</strong> <a href="patent/hypergraph.pdf">Doc</a> | 2023</li>
+          <li><strong>Guitar Learning System Using Augmented Reality</strong> <a href="patent/guitar_learning.pdf">Doc</a> | 2021</li>
+        </ul>
+
+        <!-- Services -->
+        <h2 class="section-title">Services</h2>
+        <h3 class="subsection-label">Reviewing</h3>
+        <p>
+          CHI | 2025, 2024, 2023, 2022, 2021<br>
+          CHI PLAY WIP | 2022, 2020
+        </p>
+
+        <h3 class="subsection-label">Seminar</h3>
+        <p>EIRIC | <a href="https://www.eiric.or.kr/community/webinar_detail.php?Seq=51&totalCnt=48">2021</a></p>
+
+        <!-- Projects -->
+        <hr class="section-divider">
+        <h2 id="projects" class="section-title">Projects</h2>
+
+        <h3 class="subsection-label">Work Projects</h3>
+
+        <div class="entry" id="AIMD">
+          <img class="entry-img" src="images/multi_modal.png" alt="Multi-modal battlefield situation awareness" loading="lazy">
+          <div class="entry-text">
+            <span class="entry-title">Development of Explainable Spatio-temporal Complex Battlefield Situation Awareness Technology</span>
+            <span class="entry-meta"> | 2023 - 2027</span><br>
+            <p class="entry-meta">This project, funded by the Korean Defense Acquisition Program Administration, aims to develop a battlefield situation awareness system that analyzes battlefield information collected from a virtual battlefield simulator using artificial intelligence technologies. The system enhances battlefield analysis through multiple hypothesis generation, object interaction analysis, and scene graph generation.</p>
+          </div>
+        </div>
+
+        <div class="entry" id="MumT">
+          <img class="entry-img" src="images/mumt.png" alt="Manned-Unmanned Teaming system" loading="lazy">
+          <div class="entry-text">
+            <span class="entry-title">Realtime Complex Battlefield Situation Awareness Technology</span>
+            <span class="entry-meta"> | 2022 - 2026</span><br>
+            <p class="entry-meta">This project, funded by the Korean Defense Acquisition Program Administration, aims to develop a battlefield situation awareness system that leverages Manned-Unmanned Teaming (MUM-T) systems to analyze battlefield information collected by UAVs using artificial intelligence technologies. The system enhances real-time situational awareness and prediction to support strategic decision-making through video image quality enhancement, object semantic segmentation, object recognition and reconstruction, scene graph generation, and knowledge analysis.</p>
+          </div>
+        </div>
+
+        <div class="entry" id="Micro">
+          <img class="entry-img" src="images/swarm_micro_robots.jpg" alt="Swarm ultra-small robots" loading="lazy">
+          <div class="entry-text">
+            <span class="entry-title">Situation Awareness Technology using Swarm Ultra-small Robots</span>
+            <span class="entry-meta"> | 2022 - 2027</span><br>
+            <p class="entry-meta">This project, funded by the Korean Defense Acquisition Program Administration, aims to develop a battlefield situation awareness system utilizing swarm ultra-small ground robots to analyze battlefield information collected by the robots using artificial intelligence technologies. The system enhances real-time situational awareness and prediction to support strategic decision-making through cooperative object recognition, tracking and dynamic behavior inference, place recognition, and model optimization.</p>
+          </div>
+        </div>
+
+        <div class="entry" id="AIStaff">
+          <img class="entry-img" src="images/ai_staff.jpg" alt="AI military staff system" loading="lazy">
+          <div class="entry-text">
+            <span class="entry-title">A Study on Realtime Multi-Layer Battle Situation Awareness in Time and Space for AI Military Staff</span>
+            <span class="entry-meta"> | 2021 - 2022</span><br>
+            <p class="entry-meta">This project, funded by ETRI, aims to develop a battlefield situation awareness system that analyzes unstructured battlefield information, including video and text data collected by combat assets, using artificial intelligence technologies. The system enhances battlefield analysis through battlefield data generation, cooperative object recognition, automatic labeling, and scene graph generation.</p>
+          </div>
+        </div>
+
+        <div class="entry" id="PolBot">
+          <img class="entry-img" src="images/pol_bot.png" alt="Pol-Bot conversational police service" loading="lazy">
+          <div class="entry-text">
+            <span class="entry-title">Pol-Bot Development for Conversational Police Knowledge Services</span>
+            <span class="entry-meta"> | 2020 - 2021</span><br>
+            <p class="entry-meta">This project, funded by the Korean National Police Agency, aims to develop an interactive knowledge service system that analyzes voice and text data collected from police and public security services using artificial intelligence technologies. The system provides security-related information through natural language processing-based question-answering, speech recognition and conversion, and automated legal information retrieval.</p>
+          </div>
+        </div>
+
+        <h3 class="subsection-label">Personal Projects</h3>
+
+        <div class="entry">
+          <img class="entry-img" src="video/hand_interfaces_video.gif" alt="Hand interfaces using hand detection" loading="lazy">
+          <div class="entry-text">
+            <span class="entry-title">Hand Interfaces using Hand Detection Model</span><br>
+            Software engineer for a hand interfaces model | 2023<br>
+            <span class="entry-meta">#ComputerVision #SupervisedLearning</span>
+            <div class="entry-links">
+              <a href="https://dl.acm.org/doi/abs/10.1145/3491102.3501898">Reference Paper</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="entry">
+          <img class="entry-img" src="video/3d_visualization_video.gif" alt="3D objects visualization tool" loading="lazy">
+          <div class="entry-text">
+            <span class="entry-title">3D Objects Visualization Tool</span><br>
+            Software engineer for a 3D visualization tool | 2022<br>
+            <span class="entry-meta">#OpenGL #GUI</span>
+          </div>
+        </div>
+
+        <div class="entry">
+          <img class="entry-img" src="video/two_thumb_typing_video.gif" alt="Two thumbs typing simulation" loading="lazy">
+          <div class="entry-text">
+            <span class="entry-title">Two Thumbs Typing Simulation</span><br>
+            Software engineer for a two thumbs typing simulation | 2021<br>
+            <span class="entry-meta">#ComputationalUserModeling #ReinforcementLearning</span>
+          </div>
+        </div>
+
+        <div class="entry">
+          <img class="entry-img" src="video/kiosk_video.gif" alt="Museum collection voting kiosk" loading="lazy">
+          <div class="entry-text">
+            <span class="entry-title">Museum Collection Voting System on Kiosk</span><br>
+            Software engineer for a system displaying museum collection information<br>
+            National Museum of Modern and Contemporary Art | 2019<br>
+            <span class="entry-meta">#Unity</span>
+            <div class="entry-links">
+              <a href="https://youtu.be/5klaC6GWM6U">Video</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="entry">
+          <img class="entry-img" src="video/yellouder_video.gif" alt="YelLouder shouting game" loading="lazy">
+          <div class="entry-text">
+            <span class="entry-title">YelLouder: Shouting Game using Human Voice Pitch and Volume</span><br>
+            Software engineer for a media art using a human voice<br>
+            PlaceMak gallery | 2019<br>
+            <span class="entry-meta">#Unity #MediaArt</span>
+            <div class="entry-links">
+              <a href="https://youtu.be/lSNM1Yp-5DQ">Video</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="entry">
+          <img class="entry-img" src="images/pathguider.png" alt="PathGuider VR exploration assistance" loading="lazy">
+          <div class="entry-text">
+            <span class="entry-title">PathGuider: Exploration Assistance System for Virtual Reality Environment</span><br>
+            Software engineer for a path-guiding system in virtual reality<br>
+            Korea Advanced Institute of Science and Technology | 2018<br>
+            <span class="entry-meta">#Unity #HTCVive #VR</span>
+          </div>
+        </div>
+
+        <div class="entry">
+          <img class="entry-img" src="video/guitar_proto_video.gif" alt="Guitar musical note indicator" loading="lazy">
+          <div class="entry-text">
+            <span class="entry-title">Intuitive Guitar Musical Note Indicator</span><br>
+            Software engineer for a guitar musical note indicator program<br>
+            Pohang University of Science and Technology | 2017<br>
+            <span class="entry-meta">#OpenGL #AR</span>
+          </div>
+        </div>
+
+        <div class="entry">
+          <img class="entry-img" src="video/drone_video.gif" alt="Drone control using Leap Motion" loading="lazy">
+          <div class="entry-text">
+            <span class="entry-title">Intuitive Drone Control using Leap Motion</span><br>
+            UX designer for a drone control system using leap motion<br>
+            Seoul National University | 2016<br>
+            <span class="entry-meta">#Drone #LeapMotion</span>
+          </div>
+        </div>
+
+        <div class="entry">
+          <img class="entry-img" src="images/yutmarble.png" alt="Yut-marble multiplayer game" loading="lazy">
+          <div class="entry-text">
+            <span class="entry-title">Yut-marble: Multiplayer Game for Korean Blue Marble</span><br>
+            Project manager and software engineer for a customized blue marble game<br>
+            Pohang University of Science and Technology | 2015<br>
+            <span class="entry-meta">#QT #C++ #Game</span>
+          </div>
+        </div>
+
+        <!-- Skills -->
+        <h2 class="section-title">Skills</h2>
+        <dl class="skills-grid">
+          <dt>Programming</dt>
+          <dd>C, C++, C#, Java, and Python</dd>
+          <dt>Application Development (VR/AR)</dt>
+          <dd>Unity</dd>
+          <dt>Data Analysis &amp; Visualization</dt>
+          <dd>MATLAB and R</dd>
+          <dt>Motion Capture</dt>
+          <dd>Optitrack</dd>
+          <dt>Robotics</dt>
+          <dd>ROS1 and ROS2</dd>
+        </dl>
+
+        <!-- CV -->
+        <hr class="section-divider">
+        <h2 id="cv" class="section-title">Curriculum Vitae</h2>
+        <p><a href="cv/cv_seungwon_do.pdf">Download CV</a> (Last updated: Mar 23, 2023)</p>
+
+        <!-- Footer -->
+        <footer class="page-footer">
+          Updated on Feb 13, 2025
+        </footer>
+
+      </main>
+
     </div>
   </div>
-  <!-- /.container -->
-  <!-- Other people may like it too! -->
-  <!-- <a style="color:#b5bec9;font-size:0.8em; float:right;" href="https://github.com/mavroudisv/plain-academic">Plain Academic</a> -->
 
 </body>
 
